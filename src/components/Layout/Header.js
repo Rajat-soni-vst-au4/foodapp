@@ -1,13 +1,14 @@
 import React from 'react';
 import image from "../../assets/meals.jpeg";
 import classes from "./Header.module.css";
+import HeaderCartButton from './HeaderCartButton';
 
 const Header = (props) => {
   return (
     <>
         <header className={classes.header}>
-            <h1>Foodify</h1>
-            <button>Cart</button>
+            <h1>Foody-Fy</h1>
+            <HeaderCartButton />
         </header>
         <div className={classes["main-image"]}>
             <img src={image} alt="table of food"/>
